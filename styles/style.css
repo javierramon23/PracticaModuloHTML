@@ -1,0 +1,6 @@
+body {
+    /* Definicion de una variable en CSS */
+    --main-color: red;
+    /* Utilizamos la variable para definir el color del texto */
+    color: var(--main-color);
+}
