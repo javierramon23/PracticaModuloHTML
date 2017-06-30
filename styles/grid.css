@@ -1,0 +1,55 @@
+.container {
+    /* Ancho que ocupara el elemento*/
+    width: 100%;
+    /* MAXIMO ancho que ocupara el elemento*/
+    max-width: 1200px;
+    /* Margenes superior e inferior 0, laterales automaticos */
+    margin: 0 auto;
+}
+
+/* Determinamos el numero de columnas que van a componer la pantalla del navegador.
+Creamos una clase partiendo de una sólo columna, hasta agrupar a todas ellas, en cada
+paso acumulamos los anchos de las columnas anteiores */
+
+/* Suponiendo que la pantalla la componen 6 columnas */
+.col-1 {
+    /* Ancho de la columna */
+    width: calc(100% / 6);
+    /* La columna "flota" a la izquierda */
+    float: left;
+}
+
+.col-2 {
+    /* Ancho de la columna */
+    width: calc(calc(100% / 6) * 2);
+    /* La columna "flota" a la izquierda */
+    float: left;
+}
+
+.col-3 {
+    /* Ancho de la columna */
+    width: calc(calc(100% / 6) * 3);
+    /* La columna "flota" a la izquierda */
+    float: left;
+}
+
+.col-4 {
+    /* Ancho de la columna */
+    width: calc(calc(100% / 6) * 4);
+    /* La columna "flota" a la izquierda */
+    float: left;
+}
+
+.col-5 {
+    /* Ancho de la columna */
+    width: calc(calc(100% / 6) * 5);
+    /* La columna "flota" a la izquierda */
+    float: left;
+}
+
+.col-6 {
+    /* Ancho de la columna */
+    width: calc(calc(100% / 6) * 6);
+    /* La columna "flota" a la izquierda */
+    float: left;
+}

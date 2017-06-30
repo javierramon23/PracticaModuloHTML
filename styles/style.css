@@ -4,3 +4,17 @@ body {
     /* Utilizamos la variable para definir el color del texto */
     color: var(--main-color);
 }
+
+.div-par{
+    color:greenyellow;
+    background-color: orange;
+    height: 25px;
+    text-align: center;
+}
+
+.div-impar{
+    color:orange;
+    background-color: greenyellow;
+    height: 25px;
+    text-align: center;
+}
