@@ -1,5 +1,11 @@
+
+@font-face {
+    font-family: marvel;
+    src: url(../fonts/Marvel-Regular.ttf);
+}
+
 * {
-    font-family: Calibri;
+    font-family: marvel;
 }
 
 body {
@@ -56,6 +62,7 @@ body {
     text-decoration: none;
     display: inline-block;
     color: white;
+    font-size: 20px;
 }
 
 
