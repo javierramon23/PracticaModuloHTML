@@ -4,109 +4,58 @@
         <meta charset="UTF-8">
         <!--Se IMPORTA una hoja de estilos-->
         <link rel="stylesheet" type="text/css" href="./styles/style.css">
-        <link rel="stylesheet" type="text/css" href="./styles/grid.css">
-        <title>Etiquetas HTML5</title>
+        <link rel="stylesheet" type="text/css" href="./styles/flexbox.css">
+        <title>Mi CV</title>
     </head>
-    <body>
-        <!--Para poder implementar un script-->
-        <script>
-        </script>
-        Aqui empieza el "BODY" del documento.
-        <!---->
-        <header>
-            Aqui empieza el "HEADER" del documento.
-        </header>
-        <!--Para definir un conjunto de LINKS de NAVEGACION-->
-        <nav>
-            Aqui hay un "NAV" de navegación.
-        </nav>
-        <!-- Para definir el contenido PRINCIPAL de un documento-->
-        <main>
-            Aqui empieza el "MAIN" del documento.
-            <!--Define SECCIONES en el documento, como capitulos, 
-            o cualquier otra sección dentro del documento-->
-            <section>
-                Aqui empieza una "SECTION" del documento.
-                <!--Define contenido INDEPENDIENTE en el documento, 
-                que tiene sentido si apareciera SOLO-->
-                <article>
-                    Aqui empieza un "ARTICLE" del documento.
-                    <!-- Define contenido INDEPENDIENTE como ILUSTRACIONES, 
-                    DIAGRAMAS, FOTOS, listados de CODIGO etc.-->
-                    <figure>
-                        <!--Define una IMAGEN-->
-                        <img src="" alt="">
-                        <!--Define un SUBTITULO para una etiqueta FIGURE-->
-                        <figcaption>
-                        </figcaption>
-                    </figure>
-                    <!-- Define el TITULO de un trabajo como un LIBRO, una CANCION, 
-                    una PELICULA, una PINTURA, etc-->
-                    <cite>
-                    </cite>
-                    <!-- Define un VIDEO-->
-                    <video>
-                        <!--Define la fuentes de ORIGEN del TAG que la antecede-->
-                        <source src="" type="">
-                    </video>
-                    <!--Define una FECHA/HORA-->
-                    <time></time>
-                    <!--Define un formulario para el envio de datos a un servidor-->
-                    <form action="">
-                    </form>
-                    <!--Define la estructura de una TABLA-->
-                    <table>
-                        <!--Define filas y columnas que serán la CABECERA de la tabla-->
-                        <thead>
-                            <!--FILA-->
-                            <tr>
-                                <!--COLUMNA-->
-                                <td>
-                                </td>
-                            </tr>
-                        </thead>
-                        <!--Define filas y columnas que serán el CUERPO de la tabla-->
-                        <tbody>
-                            <tr>
-                                <td>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <!--Define filas y columnas que serán el PIE de la tabla-->
-                        <tfoot>
-                            <tr>
-                                <td>
-                                </td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </article>
-            </section>
-            <!--El contenido de esta SECCION se realiza con GRID LAYOUT, 
-            que permite distribuir el contenido de forma mas simple-->
-            <section class="container">
-                <!--Commo queremos ocupar todo el ancho de la pantall
-                -->
-                <div class="col-2 div-par">
-                    DIV1
-                </div>
-                <div class="col-2 div-impar">
-                    DIV2
-                </div>
-                <div class="col-2 div-par">
-                    DIV3
-                </div>
-            </section>
-            <!--El contenido de esta SECCION se realiza con FLEXBOX
-            que permite distribuir el contenido de forma mas simple aun que con
-            GRID LAYOUT-->
-            <section>
 
+    <body>
+        <header class="header">
+            <div class="cover-page"></div>
+            <div class="title">
+                <h1 class="document-title">Javier Ramón Sola</h1>
+            </div>
+            <div class="document-subtitle">
+                <h2>Full Stack Web Devoloper</h2>
+                <cite>"No!, try not, <strong>do it or do not</strong>, there is no try" - Yoda.
+            </div>
+        </header>
+
+        <nav class="main-menu">
+            <ul class="main-menu-list">
+                <li class="main-menu-item">
+                    <a href="">
+                        Quién Soy
+                    </a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="" class="main-manu-link">
+                        Estudios
+                    </a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="" class="main-manu-link">
+                        Experiencia
+                    </a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="" class="main-manu-link">
+                        Sobre mi
+                    </a>
+                </li>
+                <li class="main-menu-item">
+                    <a href="" class="main-manu-link">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-container">
+            <section id="first-section" class="main-section">
             </section>
         </main>
-        <!--Define un PIE para un DOCUMENTO o SECCION-->
-        <footer>
-            Aqui hay comienza el "FOOTER" del documento.
+
+        <footer class="footer">
         </footer>
     </body>
 </html>

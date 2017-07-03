@@ -1,20 +1,61 @@
+* {
+    font-family: Calibri;
+}
+
 body {
-    /* Definicion de una variable en CSS */
-    --main-color: red;
-    /* Utilizamos la variable para definir el color del texto */
-    color: var(--main-color);
+    margin: 0 auto;
 }
 
-.div-par{
-    color:greenyellow;
-    background-color: orange;
-    height: 25px;
+.cover-page {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/portada.jpg);
+    height: 100vh;
+}
+
+.document-title {
+    position: absolute;
+    top: 60%;
+    background-color: rgba(34,115,170,.50);
+    width: 100%;
+    color: white;
+    padding-left: 15px;
+}
+
+.document-subtitle {
+    position: absolute;
+    top: 70%;
+    background-color: rgba(34,115,170,.50);
+    width: 100%;
+    color: white;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+.main-menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(34,115,170,.50);
+}
+
+.main-menu > .main-menu-list {
+    list-style-type: none;
+    margin: 0;
     text-align: center;
 }
 
-.div-impar{
-    color:orange;
-    background-color: greenyellow;
-    height: 25px;
-    text-align: center;
+.main-menu > .main-menu-list > .main-menu-item {
+    display: inline-block;
+    font-size: 16px;
 }
+
+.main-menu > .main-menu-list > .main-menu-item  a {
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+
