@@ -73,7 +73,25 @@ body {
 }
 
 .form {
-    padding: 25px;
+    padding: 10px;
+}
+
+td {
+    padding: 2px;
+}
+
+label {
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.footer {
+    height: 25px;
+    padding: 10px;
+    background-color: rgb(34,115,170);
+    text-align: center; 
 }
 
 

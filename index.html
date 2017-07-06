@@ -53,9 +53,42 @@
         <main class="main-container">
             <section class="main-section">
                 <div>
-                    <article class="about-me">
+                    <article class="who-i-am">
                         <header>
                             <h2 class="section-title">Quien Soy:</h2>
+                        </header>
+                    </article>
+                </div>
+            </section>
+            <section class="main-section">
+                <div>
+                    <article class="studies">
+                        <header>
+                            <h2 class="section-title">Formación Académica:</h2>
+                        </header>
+                        <div>
+                            <table>
+                                <thead>Estudios Superiores:</thead>
+
+                            </table>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="main-section">
+                <div>
+                    <article class="about-me">
+                        <header>
+                            <h2 class="section-title">Experiencia Laboral:</h2>
+                        </header>
+                    </article>
+                </div>
+            </section>
+            <section class="main-section">
+                <div>
+                    <article class="about-me">
+                        <header>
+                            <h2 class="section-title">Sobre Mi:</h2>
                         </header>
                     </article>
                 </div>
@@ -66,18 +99,48 @@
                 </header>
                 <div class="form">
                     <form action="">
-                        <div class="form-row">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre">
-                            <label for="apellidos">Apellidos:</label>
-                            <input type="text" id="apellidos" name="apellidos">
-                        </div>
+                        <table class="form-table">
+                            <tr class="form-row">
+                                <td><label for="nombre">Nombre:</label></td>
+                                <td><input type="text" id="nombre" name="nombre"></td>
+                                <td colspan="2"><label for="como">¿Cómo me has conocido?:</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="apellidos">Apellidos:</label></td>
+                                <td><input type="text" id="apellidos" name="apellidos"></td>
+                                <td><label for="como_1">Facebook</label></td>
+                                <td><input type="radio" id="como_1" name="como" value="Facebook"></td>
+                            </tr>
+                            <tr class="form-row">
+                                <td><label for="email">Email:</label></td>
+                                <td><input type="email" id="email" name="email"></td>
+                                <td><label for="como_1">Linkeding</label>
+                                <td><input type="radio" id="como_2" name="como" value="Linkeding"></td>
+                            </tr>
+                            <tr class="form-row">
+                                <td><label for="telefono">Telefono:</label></td>
+                                <td><input type="tel" id="tel" name="tel"></td>
+                                <td><label for="como_1">Amigo</label></td>
+                                <td><input type="radio" id="como_3" name="como" value="Amigo"></td>
+                            </tr>
+                            <tr class="form-row">
+                                <td><label for="mensaje">Mensaje:</label></td>
+                                <td><input type="text" id="mensaje" name="mensaje"></td>
+                                <td><label for="como_1">Otros</label></td>
+                                <td><input type="radio" id="como_3" name="como" value="Otros"></td>
+                            </tr>
+                            <tr class="form-row"><td colspan="4"></td></tr>
+                            <tr class="form-row" align="center">
+                                <td colspan="4"><input type="submit" id="enviar" name="enviar" value="Enviar"></td>
+                            </tr>
+                        </table>
                     </form>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
+            Javier Ramón Sola - Teruel - 2017 KeepCoding
         </footer>
     </body>
 </html>
