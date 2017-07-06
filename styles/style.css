@@ -6,7 +6,7 @@
 
 * {
     font-family: marvel;
-    color: white;
+    color: black;
 }
 
 body {
@@ -72,6 +72,22 @@ body {
     padding: 10px;
 }
 
+.higher-studies-list {
+    list-style-type: none;
+    margin: 0;
+}
+
+.higher-studies-list > .higher-studies-item{
+   padding: 5px;
+}
+
+.higher-studies-list > .higher-studies-item > table {
+    width: 25%;
+    background-color: white;
+    border: 1 solid white;
+    border-radius: 10px;
+}
+
 .form {
     padding: 10px;
 }
@@ -87,11 +103,19 @@ label {
     padding: 1px;
 }
 
+input {
+    color: black;
+}
+
 .footer {
     height: 25px;
     padding: 10px;
     background-color: rgb(34,115,170);
     text-align: center; 
+}
+
+.logo-image {
+    width: 100px;
 }
 
 
