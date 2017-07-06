@@ -82,10 +82,15 @@ body {
 }
 
 .higher-studies-list > .higher-studies-item > table {
-    width: 25%;
+    width: 100%;
     background-color: white;
     border: 1 solid white;
     border-radius: 10px;
+}
+
+.higher-studies-list > .higher-studies-item > table .image-cell {
+    width: 100px;
+    text-align: center;
 }
 
 .form {
@@ -94,6 +99,7 @@ body {
 
 td {
     padding: 2px;
+    text-align: left;
 }
 
 label {
@@ -115,7 +121,22 @@ input {
 }
 
 .logo-image {
-    width: 100px;
+    height: 50px;
+}
+
+.flex-content {
+    display: flex;
+    flex-flow: row;
+}
+
+.flex-item {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.plain-text {
+    padding-left: 25px;
+    color: white;
 }
 
 
