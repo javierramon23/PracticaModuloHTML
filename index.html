@@ -62,6 +62,9 @@
                         <header>
                             <h2 class="section-title">Quien Soy:</h2>
                         </header>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi corporis, deleniti asperiores suscipit nostrum maiores tenetur ipsam maxime neque ab. Expedita cupiditate veritatis quidem at ad neque sunt quae laborum.
+                        </p>
                     </article>
                 </div>
             </section>
@@ -198,9 +201,10 @@
                 <header>
                     <h2 class="section-title">Contacto:</h2>
                 </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sed porro nam, quasi ut accusamus excepturi error, ad vitae. Quis nobis, est voluptatum, officiis velit suscipit labore alias dolore eveniet.<p>
                 <div class="flex-content">
                     <div class="form flex-item">
-                        <form action="">
+                        <form class="contact-form">
                             <table class="form-table">
                                 <tr class="form-row">
                                     <td><label for="nombre">Nombre:</label></td>
@@ -233,7 +237,7 @@
                                 </tr>
                                 <tr class="form-row"><td colspan="4"></td></tr>
                                 <tr class="form-row" align="center">
-                                    <td colspan="4"><input type="submit" id="enviar" name="enviar" value="Enviar"></td>
+                                    <td colspan="4"><button class="submit-button">Enviar</button></td>
                                 </tr>
                             </table>
                         </form>
@@ -250,14 +254,44 @@
                             <h2 class="section-title">Gestor de Tareas:</h2>
                         </header>
                         <div>
-
-                        </div>
-                            <form action="">
-                                
+                            <p class="task-text">Para insertar una nueva tarea, escribe el nombre que le quieres
+                                dar a esta nueva tarea en el cuadro de texto que aparece a continuación, despúes 
+                                pulsa sobre el botón "Insertar" para guardarla y que quede registrada.
+                            </p>
+                            <form class="insert-task">
+                                <label for="task">Nueva Tarea: </label>
+                                <input type="text" name="task" id="task">
+                                <button class="submit-button">Insertar</button>
                             </form>
-                        <div>
-                            <table>
-
+                        </div>
+                        <br>
+                        <div class="task-list">
+                            <table class="task-list-table">
+                                <tr>
+                                    <th>ID Tarea</th>
+                                    <th>Tarea</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Actualizar repositorio</td>
+                                    <td>Eliminar</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Eliminar repositorio</td>
+                                    <td>Eliminar</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Eliminar repositorio</td>
+                                    <td>Eliminar</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Eliminar repositorio</td>
+                                    <td>Eliminar</td>
+                                </tr>
                             </table>
                         </div>
                     </article>
