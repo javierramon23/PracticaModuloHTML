@@ -72,10 +72,10 @@ body {
 }
 
 .section-title {
-    width: 75%;
+    width: 25%;
     margin: 0px;
     padding: 10px;
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 .higher-studies-list {
@@ -152,31 +152,31 @@ body {
     text-align: center;
 }
 
-.task-list {
+.tasks-list {
     padding: 15px;
 }
 
-.task-list-table {
+.tasks-list-table {
     width: 50%;
     color: black;
     border-collapse: collapse;
     margin: 0 auto;
 }
 
-.task-list-table  th {
+.tasks-list-table  th {
+    width: 33%;
+    background-color: rgb(34,115,170);
     color: white;
     font-weight: normal;
 }
 
-.task-list-table  tr {
+.tasks-list-table  tr {
     text-align: center;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid white;
 }
 
-.task-list-table  tr:nth-child(even) {
-    background-color: lightgrey;
-    color: black;
-    border-radius: 10px;
+.tasks-list-table  tr > td{ 
+    width: 33%;
 }
 
 .submit-button {

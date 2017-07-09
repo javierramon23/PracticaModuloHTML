@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <!--Se IMPORTA una hoja de estilos-->
         <link rel="stylesheet" type="text/css" href="./styles/style.css">
-        <link rel="stylesheet" type="text/css" href="./styles/flexbox.css">
         <title>Mi CV</title>
     </head>
 
@@ -261,37 +260,15 @@
                             <form class="insert-task">
                                 <label for="task">Nueva Tarea: </label>
                                 <input type="text" name="task" id="task">
-                                <button class="submit-button">Insertar</button>
+                                <button id="new-task" class="submit-button">Insertar</button>
                             </form>
                         </div>
                         <br>
-                        <div class="task-list">
-                            <table class="task-list-table">
-                                <tr>
-                                    <th>ID Tarea</th>
-                                    <th>Tarea</th>
-                                    <th>Eliminar</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Actualizar repositorio</td>
-                                    <td>Eliminar</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Eliminar repositorio</td>
-                                    <td>Eliminar</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Eliminar repositorio</td>
-                                    <td>Eliminar</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Eliminar repositorio</td>
-                                    <td>Eliminar</td>
-                                </tr>
+                        <div class="tasks-list">
+                            <table class="tasks-list-table">
+                                <tr><th>ID Tarea</th><th>Descripción Tarea</th><th>Eliminar</th></tr>
+                            </table>
+                            <table id="tasks-table" class="tasks-list-table" name="tasks-table">
                             </table>
                         </div>
                     </article>
@@ -302,4 +279,6 @@
             Javier Ramón Sola - Teruel - 2017 KeepCoding
         </footer>
     </body>
+    <script src="./js/form-validation.js"></script>
+    <script src="./js/ajax.js"></script>
 </html>
