@@ -248,7 +248,7 @@
             </section>
             <section class="main-section" id="task-section">
                 <div>
-                    <article class="task">
+                    <article class="tasks">
                         <header>
                             <h2 class="section-title">Gestor de Tareas:</h2>
                         </header>
@@ -258,14 +258,14 @@
                                 pulsa sobre el botón "Insertar" para guardarla y que quede registrada.
                             </p>
                             <form class="insert-task">
-                                <label for="task">Nueva Tarea: </label>
-                                <input type="text" name="task" id="task">
-                                <button id="new-task" class="submit-button">Insertar</button>
+                                <label for="taskName">Nueva Tarea: </label>
+                                <input type="text" name="taskName" id="taskName" required>
+                                <button id="addTask" class="submit-button">Insertar</button>
                             </form>
                         </div>
                         <br>
                         <div class="tasks-list">
-                            <table class="tasks-list-table">
+                            <table class="tasks-list-table" name="task-list-title">
                                 <tr><th>ID Tarea</th><th>Descripción Tarea</th><th>Eliminar</th></tr>
                             </table>
                             <table id="tasks-table" class="tasks-list-table" name="tasks-table">

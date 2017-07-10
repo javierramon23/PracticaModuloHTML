@@ -1,7 +1,15 @@
 // Se define un array vacio que almacenara las tareas.
 var task = [];
+//
+var form = document.getElementsByTagName("form")[1];
+//
+var taskName = document.getElementById("taskName");
 
-// Función que permite crear filas a partir de las tareas almacenadas.
+var addTask = document.getElementById("addTask");
+
+/*
+ Función que permite crear filas a partir de las tareas almacenadas.
+ */
 var drawTasks =  function (){
     // Se "vacia" el contenido de la tabla insertando HTML vacio.
     document.getElementById("tasks-table").innerHTML = " ";
@@ -20,9 +28,10 @@ var drawTasks =  function (){
     table.innerHTML = table.innerHTML + rows;
 }
 
-// Función que realiza peticion AJAX a servidor para insertar una tarea.
+/*
+ Función que realiza peticion AJAX a servidor para insertar una tarea.
+ */
 var createTask = function (name){
-    console.log("entro");
     var XHR = new XMLHttpRequest();
 
     XHR.open("POST", "http://localhost:8000/api/task", true);
@@ -40,6 +49,8 @@ var createTask = function (name){
     XHR.send(JSON.stringify({"name":name}));
 }
 
+/*
+*/
 var getTasks = function (name){
    
     var XHR = new XMLHttpRequest();
@@ -59,12 +70,23 @@ var getTasks = function (name){
     XHR.send();
 }
 
-// Creamos un evento sobre el boton del gestor de tareas.
-document.getElementById("new-task").addEventListener("click", function(event){
+/*
+*/
+addTask.addEventListener("click", function (event) {
+    // Se comprueba que el campo no esta vacio.
+    if(taskName.checkValidity() === false){
+        event.preventDefault();
+        alert("El nombre de la tarea no puede estar vacio.");
+        return false;
+    }
+    // Se crea y almacena la tarea.
+    createTask(taskName.value);
+    // Se borra el campo de texto.
+    form.reset();
+    //
     event.preventDefault();
-    createTask(document.getElementById("task").value);
 });
 
-// 
+// Se "cargan" las tareas pendientes cuando se carga la página.
 getTasks();
 
