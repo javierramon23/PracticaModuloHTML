@@ -200,31 +200,37 @@
                 <header>
                     <h2 class="section-title">Contacto:</h2>
                 </header>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sed porro nam, quasi ut accusamus excepturi error, ad vitae. Quis nobis, est voluptatum, officiis velit suscipit labore alias dolore eveniet.<p>
+                <p>
+                    A continuación encontrarás toda la información necesaria para poderte ponerte en contacto conmigo, puedes utilizar
+                    el formulario que aparece para enviarme un mensaje o los datos que apaerecen junto a él para hacerlo de forma personal.
+                    Elije tú la forma que más te guste.
+                </p>
                 <div class="flex-content">
                     <div class="form flex-item">
-                        <form class="contact-form">
+                        <form class="contact-form" name="contact" method="get" novalidate>
                             <table class="form-table">
                                 <tr class="form-row">
                                     <td><label for="nombre">Nombre:</label></td>
-                                    <td><input type="text" id="nombre" name="nombre"></td>
+                                    <td><input type="text" id="nombre" name="nombre" required></td>
                                     <td colspan="2"><label for="como">¿Cómo me has conocido?:</label></td>
                                 </tr>
-                                <tr>
+                                <tr class="form-row">
                                     <td><label for="apellidos">Apellidos:</label></td>
-                                    <td><input type="text" id="apellidos" name="apellidos"></td>
+                                    <td><input type="text" id="apellidos" name="apellidos" required></td>
                                     <td><label for="como_1">Facebook</label></td>
                                     <td><input type="radio" id="como_1" name="como" value="Facebook"></td>
                                 </tr>
                                 <tr class="form-row">
                                     <td><label for="email">Email:</label></td>
-                                    <td><input type="email" id="email" name="email"></td>
+                                    <td><input type="email" id="email" name="email" 
+                                               pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+"></td>
                                     <td><label for="como_1">Linkeding</label>
                                     <td><input type="radio" id="como_2" name="como" value="Linkeding"></td>
                                 </tr>
                                 <tr class="form-row">
                                     <td><label for="telefono">Telefono:</label></td>
-                                    <td><input type="tel" id="tel" name="tel"></td>
+                                    <td><input type="tel" id="telefono" name="telefono" 
+                                               pattern="^[6|9]{1}[0-9]{8}$"></td>
                                     <td><label for="como_1">Amigo</label></td>
                                     <td><input type="radio" id="como_3" name="como" value="Amigo"></td>
                                 </tr>
@@ -236,7 +242,8 @@
                                 </tr>
                                 <tr class="form-row"><td colspan="4"></td></tr>
                                 <tr class="form-row" align="center">
-                                    <td colspan="4"><button class="submit-button">Enviar</button></td>
+                                    <td colspan="2"><button type="submit" id="sendForm" class="submit-button">Enviar</button></td>
+                                    <td colspan="2"><input type="text" id="otros" name="otros"></td>
                                 </tr>
                             </table>
                         </form>
