@@ -5,6 +5,7 @@
         <!--Se IMPORTA una hoja de estilos-->
         <link rel="stylesheet" type="text/css" href="./styles/style.css">
         <title>Mi CV</title>
+        <script src="./js/googleMap.js"></script>
     </head>
 
     <body>
@@ -206,7 +207,25 @@
                     Elije tú la forma que más te guste.
                 </p>
                 <div class="flex-content">
-                    <div class="form flex-item">
+                    <div class="flex-item">
+                        <ul>
+                            <li>Nombre: Javier</li>
+                            <li>Apellidos: Ramón Sola</li>
+                            <li>Telefono:
+                                <ul>
+                                    <li>Fijo: (+34)978-604959</li>
+                                    <li>Movil: (+34)691-580-738</li>
+                                </ul>
+                            </li>
+                            <li>Email:
+                                <ul>
+                                    <li>Google: javierramon.seo@gmail.com</li>
+                                    <li>Outlook: javierramon@outlook.com</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-item">
                         <form class="contact-form" name="contact" method="get" novalidate>
                             <table class="form-table">
                                 <tr class="form-row">
@@ -235,21 +254,31 @@
                                     <td><input type="radio" id="como_3" name="como" value="Amigo"></td>
                                 </tr>
                                 <tr class="form-row">
-                                    <td><label for="mensaje">Mensaje:</label></td>
-                                    <td><input type="text" id="mensaje" name="mensaje"></td>
+                                    <td colspan="2"></td>
                                     <td><label for="como_1">Otros</label></td>
                                     <td><input type="radio" id="como_3" name="como" value="Otros"></td>
                                 </tr>
+                                <tr class="hiden">
+                                    <td></td>
+                                    <td></td>
+                                    <td><label for="otros">¿Cual?:</label></td>
+                                    <td><input type="text" id="otros" name="otros"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="mensaje">Mensaje:</label></td>
+                                    <td colspan="3">
+                                        <textarea rows="4" cols = "60" id="mensaje" name="mensaje"></textarea>
+                                    </td>
+                                </tr>
                                 <tr class="form-row"><td colspan="4"></td></tr>
                                 <tr class="form-row" align="center">
-                                    <td colspan="2"><button type="submit" id="sendForm" class="submit-button">Enviar</button></td>
-                                    <td colspan="2"><input type="text" id="otros" name="otros"></td>
+                                    <td colspan="4"><button type="submit" id="sendForm" class="submit-button">Enviar</button></td>
                                 </tr>
                             </table>
                         </form>
                     </div>
                     <div class="flex-item">
-                        Mapa Aqui.
+                        <div id="googleMap"></div>
                     </div>
                 </div>
             </section>
@@ -288,4 +317,5 @@
     </body>
     <script src="./js/form-validation.js"></script>
     <script src="./js/ajax.js"></script>
+    
 </html>

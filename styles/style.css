@@ -106,11 +106,15 @@ body {
     padding: 5px;
     border-radius: 15px; 
     color: black;
-    text-align: center;
+    text-align: left;
 }
 
 .contact-form  input {
     color: black;
+}
+
+.hiden {
+    display:none;
 }
 
 .footer {
@@ -197,3 +201,6 @@ p {
     margin: 0px;
 }
 
+#googleMap {
+    height: 200px;
+}
