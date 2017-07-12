@@ -5,9 +5,13 @@ var inputApellidos = document.getElementById("apellidos");
 var inputEmail = document.getElementById("email");
 var inputTelefono = document.getElementById("telefono");
 var inputMensaje = document.getElementById("mensaje");
-var inputComo = {
-    
-}
+
+var inputComoMeConoces = {
+    modoUno: document.getElementById("conocido_1"),
+    modoDos: document.getElementById("conocido_2"),
+    modoTres: document.getElementById("conocido_3"),
+    otroModo: document.getElementById("conocido_4")
+};
 
 /*
  */
@@ -26,6 +30,8 @@ function maxWords (texto) {
     }
 }
 
+/*
+ */
 form.addEventListener("submit", function (event){
     if(inputNombre.checkValidity() === false){
         alert("Nombre no puede estar vacio");
@@ -63,6 +69,22 @@ form.addEventListener("submit", function (event){
     }
 
     event.preventDefault();
+});
+
+inputComoMeConoces.otroModo.addEventListener("click", function(event) {
+        document.getElementsByClassName("hiden-row")[0].style.visibility = "visible";
+});
+
+inputComoMeConoces.modoUno.addEventListener("click", function(event) {
+        document.getElementsByClassName("hiden-row")[0].style.visibility = "hidden";
+});
+
+inputComoMeConoces.modoDos.addEventListener("click", function(event) {
+        document.getElementsByClassName("hiden-row")[0].style.visibility = "hidden";
+});
+
+inputComoMeConoces.modoTres.addEventListener("click", function(event) {
+        document.getElementsByClassName("hiden-row")[0].style.visibility = "hidden";
 });
 
 

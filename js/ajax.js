@@ -4,7 +4,7 @@ var task = [];
 var form = document.getElementsByTagName("form")[1];
 //
 var taskName = document.getElementById("taskName");
-
+//
 var addTask = document.getElementById("addTask");
 
 /*
