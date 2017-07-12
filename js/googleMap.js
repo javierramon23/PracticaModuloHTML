@@ -1,16 +1,16 @@
 function initialize() {
-    var myPosition = {lat: 0, long:0};
+    var myLatLng = {lat: 42, lng:-83};
 
-    var mapProperties = {
-        center: myPosition,
+    var mapProp = {
+        center: myLatLng,
         zoom: 15,
         mapTypeID: google.maps.MapTypeId.ROADMAP
     };
 
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProperties);
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-    var maker = new google.maps.Maker({
-        position: myPosition,
+    var marker = new google.maps.Marker({
+        position: myLatLng,
         map: map,
         title: "Aqui estoy"
     });
