@@ -80,13 +80,14 @@ body {
     position: fixed;
     top: 0;
     background-color: white;
-    opacity: 0.50;
+    opacity: 0.75;
 }
 
 .main-menu > .main-menu-list {
     list-style-type: none;
     margin: 0;
     text-align: center;
+    font-size: 0;
 }
 
 .main-menu > .main-menu-list > .main-menu-item {
@@ -99,6 +100,8 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
+    opacity: 1;
+    color:black;
 }
 
 .main-section {
@@ -112,7 +115,11 @@ body {
     padding: 10px;
     border: 10px solid white;
     border-radius: 25px;
-    background-color: rgb(40, 150, 220);
+    background-image: url(../images/portada.jpg);
+}
+
+article {
+    padding-top: 20px;
 }
 
 .higher-studies-list {
