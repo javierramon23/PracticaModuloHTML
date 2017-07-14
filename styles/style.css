@@ -4,13 +4,10 @@
     src: url(../fonts/Marvel-Regular.ttf);
 }
 
-* {
-    font-family: Calibri; 
-}
-
 body {
     margin: 0 auto;
     color: white;
+    font-family: Calibri;
 }
 
 .cover-page {
@@ -24,28 +21,66 @@ body {
 .document-title {
     position: absolute;
     top: 0%;
-    background-color: rgba(34,115,170,.50);
+    background-color: white;
     width: 100%;
     padding-left: 25px;
     animation: titleAnimation 3s forwards;
     animation-delay: 0.8s;
     opacity: 0;
+    font-size: 55px;
+    color: rgb(34,115,170);
+}
+
+.document-logos {
+    position: absolute;
+    top: 50%;
+}
+
+.logo {
+    height: 0px;
+    margin-left: 25px;
+    opacity: 0;
+}
+
+#CSS3_logo {    
+    animation: logoAnimation 2s forwards;
+    animation-delay: 2s;
+}
+
+#JS_logo {    
+    animation: logoAnimation 2s forwards;
+    animation-delay: 3s;
+}
+
+#HTML5_logo {    
+    animation: logoAnimation 2s forwards;
+    animation-delay: 1s;
 }
 
 .document-subtitle {
     position: absolute;
-    top: 70%;
-    background-color: rgba(34,115,170,.50);
+    top: 65%;
+    left:-105%;
+    background-color: white;
     width: 100%;
     padding-left: 25px;
     padding-bottom: 25px;
+    opacity: 0.75;
+    color: rgb(34,115,170);
+    animation: subtitleAnimation 3s forwards;
+    animation-delay: 1s;
+}
+
+.cite {
+    font-size: 20px;
 }
 
 .main-menu {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: rgba(34,115,170,.50);
+    background-color: white;
+    opacity: 0.50;
 }
 
 .main-menu > .main-menu-list {
@@ -66,19 +101,18 @@ body {
     font-size: 20px;
 }
 
-.main-section:nth-child(odd) {
+.main-section {
     background-color: rgb(34,115,170);
-}
-
-.main-section:nth-child(even) {
-    background-color: rgb(40, 150, 220);
 }
 
 .section-title {
     width: 25%;
     margin: 0px;
+    margin-left: 15px;
     padding: 10px;
-    border-bottom: 2px solid white;
+    border: 10px solid white;
+    border-radius: 25px;
+    background-color: rgb(40, 150, 220);
 }
 
 .higher-studies-list {
@@ -123,7 +157,8 @@ body {
 .footer {
     height: 25px;
     padding: 10px;
-    background-color: rgb(34,115,170);
+    border-top: 1px solid white;
+    background-color: rgb(40, 150, 220);
     text-align: center; 
 }
 
@@ -155,7 +190,6 @@ body {
 
 .insert-task {
     padding-bottom: 10px;
-    border-bottom: 1px solid white;
     text-align: center;
 }
 
@@ -207,8 +241,10 @@ input[type=text], input[type=number], input[type=email], input[type=tel] {
 }
 
 p {
-    padding: 10px;
+    padding: 20px;
     margin: 0px;
+    width: 40%;
+    text-align: justify;
 }
 
 #googleMap {
@@ -218,13 +254,21 @@ p {
 }
 
 @keyframes titleAnimation {
-    0% {
-        opacity: 0;
-
-    }
-
     100% {
-        top:60%;
+        top:35%;
+        opacity: 0.75;
+    }
+}
+
+@keyframes logoAnimation {
+    100% {
         opacity: 1;
+        height: 100px;
+    }
+}
+
+@keyframes subtitleAnimation {
+    100% {
+        left: 0%;
     }
 }
