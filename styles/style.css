@@ -23,7 +23,6 @@ body {
     top: 0%;
     background-color: white;
     width: 100%;
-    padding-left: 25px;
     animation: titleAnimation 3s forwards;
     animation-delay: 0.8s;
     opacity: 0;
@@ -63,7 +62,6 @@ body {
     left:-105%;
     background-color: white;
     width: 100%;
-    padding-left: 25px;
     padding-bottom: 25px;
     opacity: 0.75;
     color: rgb(34,115,170);
@@ -109,7 +107,7 @@ body {
 }
 
 .section-title {
-    width: 25%;
+    width: 95%;
     margin: 0px;
     margin-left: 15px;
     padding: 10px;
@@ -164,9 +162,10 @@ article {
 .footer {
     height: 25px;
     padding: 10px;
-    border-top: 1px solid white;
-    background-color: rgb(40, 150, 220);
-    text-align: center; 
+    background-color: white;
+    opacity: 0.75;
+    text-align: center;
+    color: black;
 }
 
 .logo-image {
@@ -179,9 +178,15 @@ article {
 }
 
 .flex-item {
-    padding: 15px;
+    padding: 25px;
     flex-grow: 1;
     flex-basis: 0;
+}
+
+.mi-foto {
+    margin-left: 25%;
+    margin-top: 25px;
+    border-radius: 25px;
 }
 
 .plain-text {
@@ -247,12 +252,12 @@ input[type=text], input[type=number], input[type=email], input[type=tel] {
     color: black;
 }
 
-p {
+/*p {
     padding: 20px;
     margin: 0px;
     width: 40%;
     text-align: justify;
-}
+}*/
 
 #googleMap {
     width: 100%;
