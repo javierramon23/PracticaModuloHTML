@@ -1,9 +1,3 @@
-
-@font-face {
-    font-family: marvel;
-    src: url(../fonts/Marvel-Regular.ttf);
-}
-
 body {
     margin: 0 auto;
     color: white;
@@ -193,6 +187,11 @@ article {
 
 .plain-text {
     text-align: justify;
+}
+
+.main-text {
+    width: 50%;
+    padding: 10px;
 }
 
 .task-text {
