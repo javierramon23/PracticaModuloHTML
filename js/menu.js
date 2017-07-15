@@ -28,13 +28,16 @@ console.log(element);
 }
 
 function scrollToElement(element) {
-    console.log("ScrollToElement");
+    
     var jump = parseInt(element.getBoundingClientRect().top * 0.3);
-    console.log(jump)
+    
+    // Para que el SmoothScroll funcione en Firefox.
     document.documentElement.scrollTop +=  jump;
+    // Para que el SmoothScroll funcione en Chrome y Safari.
     document.body.scrollTop +=  jump;
+    // Para que el SmoothScroll funcione en IE11.
     window.pageYOffset += jump;
-    console.log(document.documentElement.scrollTop);
+    
     if (!element.lastJump || element.lastJump > Math.abs(jump)) {
         element.lastJump = Math.abs(jump);
         setTimeout(function() {
