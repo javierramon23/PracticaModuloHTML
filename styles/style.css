@@ -109,10 +109,6 @@ body {
 .section-title {
     width: 100%;
     margin: 0px;
-    /*margin-left: 15px;*/
-    padding: 5px;
-    /*border: 10px solid white;*/
-    /*border-radius: 25px;*/
     color:black;
     background-image: url(../images/portada.jpg);
 }
@@ -161,16 +157,21 @@ article {
 }
 
 .footer {
-    height: 25px;
+    height: 20px;
     padding: 10px;
     background-color: white;
-    opacity: 0.75;
     text-align: center;
     color: black;
 }
 
 .logo-image {
     width: 100px;
+}
+
+#job-logo {
+    background-color: white;
+    text-align: center;
+    padding-top: 5px;
 }
 
 .flex-content {
@@ -252,13 +253,6 @@ input[type=text], input[type=number], input[type=email], input[type=tel] {
     border-radius: 15px;
     color: black;
 }
-
-/*p {
-    padding: 20px;
-    margin: 0px;
-    width: 40%;
-    text-align: justify;
-}*/
 
 #googleMap {
     width: 100%;
