@@ -1,4 +1,4 @@
-//
+// Se asignan los distintos elementos del DOM a variables.
 var form = document.getElementsByTagName("form")[0];
 
 var inputNombre = document.getElementById("nombre");
@@ -17,23 +17,28 @@ var inputComoMeConoces = {
 var submitButton = document.getElementById("enviar");
 
 /*
+    Función que controla el numero de palabras que se escriben en el textarea.
  */
 function maxWords (texto) {
-
+    // Definimos tres expresiones regulares que eliminan los espacios blancos "inutiles".
+    // y se aplican al texto.
     texto = texto.replace(/[ ]+/g," ");
     texto = texto.replace(/^ /,"");
     texto = texto.replace(/ $/,"");
-
+    // Se "divide" el texto en palabras. 
     var numPalabras = texto.split(" ");
-
+    // Si no superan el numero establecido.
     if(numPalabras.length <= 150) {
+        // El contenido es valido.
         return true;
     }else{
+        // Si no, no es valido.
         return false;
     }
 }
 
 /*
+    Se añade un evento al boton del formulario para controlar los datos introducidos.
  */
 form.addEventListener("submit", function (event){
     if(inputNombre.checkValidity() === false){
@@ -89,6 +94,8 @@ form.addEventListener("submit", function (event){
 });
 
 /*
+    Se definen una serie de eventos para mostrar u ocultar el un cuadro de texto en funcion
+    del "radio button" seleccionado.
  */
 inputComoMeConoces.otroModo.addEventListener("click", function(event) {
         document.getElementsByClassName("hiden-row")[0].style.visibility = "visible";
@@ -105,5 +112,3 @@ inputComoMeConoces.modoDos.addEventListener("click", function(event) {
 inputComoMeConoces.modoTres.addEventListener("click", function(event) {
         document.getElementsByClassName("hiden-row")[0].style.visibility = "hidden";
 });
-
-
