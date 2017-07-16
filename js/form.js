@@ -1,3 +1,4 @@
+//
 var form = document.getElementsByTagName("form")[0];
 
 var inputNombre = document.getElementById("nombre");
@@ -12,6 +13,8 @@ var inputComoMeConoces = {
     modoTres: document.getElementById("conocido_3"),
     otroModo: document.getElementById("conocido_4")
 };
+
+var submitButton = document.getElementById("enviar");
 
 /*
  */
@@ -61,6 +64,13 @@ form.addEventListener("submit", function (event){
         return false;
     }
 
+    if(inputMensaje.checkValidity() === false){
+        alert("El mensaje no se puede enviar vacio");
+        inputMensaje.focus();
+        event.preventDefault();
+        return false;
+    }
+
     if(maxWords(inputMensaje.value) === false){
         alert("El mensaje es demasiado largo");
         inputMensaje.focus();
@@ -68,9 +78,18 @@ form.addEventListener("submit", function (event){
         return false;
     }
 
+    submitButton.setAttribute("disabled","true");
     event.preventDefault();
+
+    setTimeout(function() {
+        form.reset();
+        submitButton.removeAttribute("disabled");
+        alert("Formulario Enviado Correctamente");
+    }, 1000);
 });
 
+/*
+ */
 inputComoMeConoces.otroModo.addEventListener("click", function(event) {
         document.getElementsByClassName("hiden-row")[0].style.visibility = "visible";
 });

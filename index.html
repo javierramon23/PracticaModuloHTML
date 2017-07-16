@@ -2,11 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <!--Se IMPORTA una hoja de estilos-->
         <link rel="stylesheet" type="text/css" href="./styles/style.css">
         <title>Mi CV</title>
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA-jpiiZm0kg4wbYwPvUtNZvyLbiNcz6p8"></script>
-        <script src="./js/googleMap.js"></script>
     </head>
 
     <body>
@@ -287,7 +284,7 @@
                             </p>
                         </div>
                         <div class="video-promo">
-                            <video id="love-coding-video" width="550" height="300" autoplay>
+                            <video id="love-coding-video" width="550" height="300" controls autoplay>
                                 <source src="./video/love_coding.mp4" type="video/mp4">
                             </video>
                         </div>
@@ -347,7 +344,7 @@
                                 <tr class="form-row">
                                     <td><label for="email">Email:</label></td>
                                     <td><input type="email" id="email" name="email" 
-                                               pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+"></td>
+                                               pattern="[A-Za-z0-9\.\+]+@[A-Za-z0-9]+\.[A-Za-z0-9\.]+" required></td>
                                     <td><label for="conocido_2">Por Linkeding:</label>
                                     <td><input type="radio" id="conocido_2" name="como-me-conoces" value="Linkeding"></td>
                                 </tr>
@@ -371,20 +368,17 @@
                                 <tr class="form-row">
                                     <td><label for="mensaje">Mensaje:</label></td>
                                     <td colspan="3">
-                                        <textarea rows="4" cols = "60" id="mensaje" name="mensaje"></textarea>
+                                        <textarea rows="4" cols = "50" id="mensaje" name="mensaje" required></textarea>
                                     </td>
                                 </tr>
                                 <tr class="form-row" align="center">
                                     <td colspan="4">
-                                        <button type="submit" id="sendForm" class="submit-button">Enviar</button>
+                                        <button type="submit" id="enviar" class="submit-button">Enviar</button>
                                     </td>
                                 </tr>
                             </table>
                         </form>
                     </div>
-                    <!--<div class="flex-item contact-form">
-                        <div id="googleMap"></div>
-                    </div>-->
                 </div>
             </section>
             <section id="gestor-tareas" class="main-section" id="task-section">
@@ -393,7 +387,7 @@
                         <header>
                             <h2 class="section-title">Gestor de Tareas:</h2>
                         </header>
-                        <div>
+                        <div class="center-text">
                             <p>Para insertar una nueva tarea, escribe el nombre que le quieres
                                 dar a esta nueva tarea en el cuadro de texto que aparece a continuación, despúes 
                                 pulsa sobre el botón "Insertar" para guardarla y que quede registrada.

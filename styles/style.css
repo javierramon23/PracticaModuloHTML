@@ -97,6 +97,7 @@ body {
 }
 
 .main-section {
+    padding-top: 50px;
     background-color: rgb(34,115,170);
 }
 
@@ -240,7 +241,7 @@ article {
 
 .submit-button {
     background-color: rgb(34,115,170);
-    border: none;
+    border: 1px solid white;
     padding: 5px 20px;
     border-radius: 5px;
     color: white;

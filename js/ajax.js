@@ -21,7 +21,7 @@ var drawTasks =  function (){
     // Para cada tarea del array se crea una fila de la tabla.
     for(var i = 0; i < task.length; i++) {
         rows += "<tr style='text-align:center'><td>" + task[i].id + "</td><td>" + task[i].name + "</td>" +
-        "<td><button id='delete-task' class='submit-button'>Borrar</button></td></tr>"
+        "<td><button id='delete-task' class='submit-button' disabled>Borrar</button></td></tr>"
     }
     
     // Se añaden las filas generadas a la tabla.
